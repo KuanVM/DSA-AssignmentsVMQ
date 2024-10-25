@@ -89,7 +89,7 @@ void inSVtrungDOB(const List& ListSV, const Ngay& dob) {
         p = p->link;
     }
     if (!found) {
-        printf("Không tìm thấy sinh viên cùng ngày sinh\n");
+        printf("Ko tim thay sinh vien cung ngay sinh\n");
     }
 }
 
@@ -106,11 +106,11 @@ int main() {
     sx(listsv, stu2);
     sx(listsv, stu3);
 
-    printf("Danh sách sinh viên:\n");
+    printf("List Sinh Vien:\n");
     inSV(listsv);
 
     Ngay dob = {1, 1, 2000};
-    printf("\nSinh viên có cùng ngày sinh 01-01-2000:\n");
+    printf("\nSinh vien co cung ngay sinh 12-01-2004:\n");
     inSVtrungDOB(listsv, dob);
 
 
